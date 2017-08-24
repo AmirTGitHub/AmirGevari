@@ -2,6 +2,8 @@ const exphbs = require('express-handlebars')
 const express = require("express");
 const app = express();
 const fs = require('fs');
+var primerMarkdown = require("primer-markdown")
+
 app.engine('handlebars' , exphbs({defaultLayout:'main'}));
 app.set('view engine' , 'handlebars');
 
